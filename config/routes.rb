@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'example/hello'
+
   # ROOT Route
   # match '/', to: 'demo#index', via: :get           #longhand MATCH-y form
   #root to: 'demo#index'                             # shorter sans MATCH
