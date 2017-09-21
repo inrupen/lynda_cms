@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   # match 'demo/index', to: 'demo#index', via: :get # longhand version
 
   get 'demo/hello'
+  get 'demo/other_hello'
 
   # DEFAULT Route (optional)
   # may be deprecated in future Rails versions
