@@ -11,6 +11,8 @@ Rails.application.routes.draw do
    get 'demo/index'                                 # shorthand version
   # match 'demo/index', to: 'demo#index', via: :get # longhand version
 
+  get 'demo/hello'
+
   # DEFAULT Route (optional)
   # may be deprecated in future Rails versions
   # get ':controller(/:action(/:id))'
