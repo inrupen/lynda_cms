@@ -1,6 +1,24 @@
 <h1>Hello World Demo! - Hello page</h1>
 
-<% 1 + 1 %>
+<% 1 + 1 %>  <br>
 
-<%= 10 + 1 %>
+<%= 10 + 1 %>  <br>
+
+<!-- adding some more complex ruby code below -->
+
+<% target = "Dallas" %>
+<%= "Hello I am from #{target}" %> <br>
+
+<%= "3.times gives:" %>         <!--here: it returns the RETURN-value of the full function i.e.3 (not 0 1 2 ) -->
+<%=  3.times{ |n|
+  puts n
+}
+%>
+
+<br>
+
+<%= "5.times gives:" %>
+<%    5.times{ |x| %>          <!--here: it returns  0 1 2 3 4 -->
+<%=       x %>  <br>
+<%    }  %>
 
