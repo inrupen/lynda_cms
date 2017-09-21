@@ -13,5 +13,7 @@ class DemoController < ApplicationController
     redirect_to(:controller => 'demo', :action => 'index')
   end
 
-
+  def google_site
+    redirect_to('http://google.com')
+  end
 end

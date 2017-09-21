@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   get 'demo/hello'
   get 'demo/other_hello'
+  get 'demo/google_site'
 
   # DEFAULT Route (optional)
   # may be deprecated in future Rails versions
