@@ -6,6 +6,7 @@ class DemoController < ApplicationController
   end
 
   def hello
+    @array = [10,20,30,40,50]
     render 'hello'
   end
 
