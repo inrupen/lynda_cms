@@ -3,4 +3,9 @@
 
 <a href="demo/hello">Hello Page1</a>
 <br>
+
 <%= link_to("Hello Page2", {:controller => 'demo', :action => 'hello'}) %>        <!--not necessary to write :controller here,but good habit-->
+<br>
+
+<%= link_to("Hello Page with Parameters", {:action => 'hello',:page => 5 ,:id => 20}) %>
+<br>

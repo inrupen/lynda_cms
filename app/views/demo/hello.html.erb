@@ -7,21 +7,20 @@
 <!-- adding some more complex ruby code below -->
 
 <% target = "Dallas" %>
-<%= "Hello I am from #{target}" %> <br>
+<%= "Hello I am from #{target}" %>
+<br>
 
 <%= "3.times gives:" %>         <!--here: it returns the RETURN-value of the full function i.e.3 (not 0 1 2 ) -->
 <%=  3.times{ |n|
   puts n
 }
 %>
-
 <br>
 
 <%= "5.times gives:" %>
 <%    5.times{ |x| %>          <!--here: it returns  0 1 2 3 4 -->
 <%=       x %>  <br>
 <%    }  %>
-
 <br>
 
 <%= "Array:" %>
@@ -31,4 +30,9 @@
 <br>
 
 <%= link_to("Index Page", {:action => 'index'}) %>
+<br>
 
+ID = <%= @id %> <br>
+ID = <%= params[:id] %> <br>              <!-- we do still have access to params in templates-->
+Page = <%= @page %> <br>
+Next Page = <%= @page.to_i + 1 %> <br>     <!-- params are always string in the URL - to always convert to int first-->

@@ -7,6 +7,8 @@ class DemoController < ApplicationController
 
   def hello
     @array = [10,20,30,40,50]
+    @id = params[:id]                     # or@id = params['id']
+    @page = params[:page]
     render 'hello'
   end
 
